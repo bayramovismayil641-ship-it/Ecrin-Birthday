@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#fdf8f4" />
+  <meta name="description" content="Ecrin'e hazırlanmış romantik doğum günü sayfası." />
+
+  <title>Ecrin'e Doğum Günü</title>
+
+  <!-- Sosyal paylaşım (Open Graph) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ecrin'e Doğum Günü" />
+  <meta property="og:description" content="Senin için yazılmış küçük bir mektup." />
+
+  <!-- Google Fonts (çevrimdışıysa sistem fontlarına düşer) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script>
+    /* İçerik dosyası klasik <script> olarak yüklenir (fetch kullanılmaz),
+       böylece index.html doğrudan çift tıklandığında da çalışır. */
+    document.documentElement.className += ' js';
+  </script>
+</head>
+
+<body>
+
+  <!-- Sayfa içi dekorasyon katmanı -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <!-- Üst çubuk (sabit) -->
+  <header class="topbar" id="topbar">
+    <a class="topbar__brand" href="#hero">
+      <span class="topbar__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M12 20.5S3.5 15.2 3.5 9.4A4.9 4.9 0 0 1 12 6a4.9 4.9 0 0 1 8.5 3.4c0 5.8-8.5 11.1-8.5 11.1Z"/>
+        </svg>
+      </span>
+      <span class="topbar__text" data-content="site.title">Ecrin'e Doğum Günü</span>
+    </a>
+
+    <nav class="topbar__nav" aria-label="Bölümler">
+      <a href="#hero" class="topbar__link">Başlangıç</a>
+      <a href="#memories" class="topbar__link">Anlar</a>
+      <a href="#finale" class="topbar__link">Son Söz</a>
+    </nav>
+  </header>
+
+  <!-- ==============================================================
+       BÖLÜM 1 — HERO / AÇILIŞ
+       ============================================================== -->
+  <section class="hero" id="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+
+    <!-- uçuşan minik kalpler -->
+    <div class="hero__petals" aria-hidden="true">
+      <span class="petal" style="--x:8%;  --d:0s;    --s:.55; --dur:16s"></span>
+      <span class="petal" style="--x:22%; --d:2.5s;  --s:.4;  --dur:19s"></span>
+      <span class="petal" style="--x:38%; --d:1.2s;  --s:.62; --dur:21s"></span>
+      <span class="petal" style="--x:54%; --d:3.4s;  --s:.38; --dur:17s"></span>
+      <span class="petal" style="--x:69%; --d:.6s;   --s:.5;  --dur:20s"></span>
+      <span class="petal" style="--x:83%; --d:4.1s;  --s:.45; --dur:18s"></span>
+      <span class="petal" style="--x:94%; --d:2.1s;  --s:.33; --dur:22s"></span>
+    </div>
+
+    <div class="hero__inner">
+      <p class="hero__eyebrow reveal" data-reveal="fade-up">
+        <span class="rule" aria-hidden="true"></span>
+        <span data-content="hero.eyebrow">Doğum Günü</span>
+        <span class="rule" aria-hidden="true"></span>
+      </p>
+
+      <h1 class="hero__name reveal" data-reveal="fade-up" data-delay="120">
+        <span class="hero__name-text" data-content="hero.name">Ecrin</span>
+        <span class="hero__swoosh" aria-hidden="true">
+          <svg viewBox="0 0 220 20" fill="none" preserveAspectRatio="none">
+            <path d="M2 13C46 4 128 3 218 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </span>
+      </h1>
+
+      <p class="hero__heading reveal" data-reveal="fade-up" data-delay="220" data-content="hero.heading">
+        Doğum Günün Kutlu Olsun
+      </p>
+
+      <p class="hero__subtitle reveal" data-reveal="fade-up" data-delay="300" data-content="hero.subtitle">
+        Bugün senin günün.
+      </p>
+
+      <!-- YAZILAN (TYPEWRITER) MESAJ -->
+      <div class="hero__typing reveal" data-reveal="fade-up" data-delay="420">
+        <p class="typing" id="typing" aria-live="polite"><span class="typing__caret" aria-hidden="true"></span></p>
+      </div>
+
+      <!-- Aşağı kaydırma ipucu -->
+      <a class="scroll-hint reveal" data-reveal="fade-up" data-delay="600" href="#memories" aria-label="Aşağı kaydır">
+        <span class="scroll-hint__label" data-content="hero.scrollHint">Aşağı kaydır</span>
+        <span class="scroll-hint__line" aria-hidden="true"><i></i></span>
+      </a>
+    </div>
+
+    <div class="hero__frame" aria-hidden="true"></div>
+  </section>
+
+  <main>
+    <!-- ============================================================
+         BÖLÜM 2 — ÖZEL ANLAR (GALERİ)
+         ============================================================ -->
+    <section class="memories" id="memories">
+      <div class="section-head">
+        <p class="section-head__eyebrow reveal" data-reveal="fade-up">
+          <span class="rule" aria-hidden="true"></span>
+          <span data-content="memories.heading">Özel Anlar</span>
+        </p>
+        <h2 class="section-head__title reveal" data-reveal="fade-up" data-delay="100" data-content="memories.intro">
+          Aşağıda, ikimizin arasından seçtiğim anlar yer alıyor.
+        </h2>
+        <span class="section-head__ornament reveal" data-reveal="fade-up" data-delay="180" aria-hidden="true">
+          <svg viewBox="0 0 120 24" fill="none">
+            <path d="M2 12h38M80 12h38" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+            <path d="M60 4.5c3 3.6 4.6 6 4.6 7.5A4.6 4.6 0 0 1 60 16.6a4.6 4.6 0 0 1-4.6-4.6c0-1.5 1.6-3.9 4.6-7.5Z" stroke="currentColor" stroke-width="1"/>
+          </svg>
+        </span>
+      </div>
+
+      <!-- Bellek kartları script.js tarafından content.js'ten üretilir -->
+      <div class="memory-list" id="memoryList">
+        <noscript>
+          <p class="noscript-note">
+            Bu sayfanın anılar bölümünü görüntülemek için lütfen tarayıcınızda JavaScript'i etkinleştirin.
+          </p>
+        </noscript>
+      </div>
+    </section>
+
+
+
+
+    <!-- ============================================================
+         BÖLÜM 4 — SON MESAJ
+         ============================================================ -->
+    <section class="finale" id="finale">
+      <div class="finale__glow" aria-hidden="true"></div>
+
+      <div class="finale__inner">
+        <p class="finale__eyebrow reveal" data-reveal="fade-up">
+          <span class="rule" aria-hidden="true"></span>
+          <span data-content="finale.eyebrow">Son Bir Söz</span>
+          <span class="rule" aria-hidden="true"></span>
+        </p>
+
+        <h2 class="finale__heading reveal" data-reveal="fade-up" data-delay="100" data-content="finale.heading">
+          Senin İçin
+        </h2>
+
+        <div class="finale__letter reveal" data-reveal="fade-up" data-delay="200">
+          <p class="finale__message" id="finaleMessage" data-content="finale.message">
+            [SON MESAJ BURAYA EKLENECEK]
+          </p>
+        </div>
+
+        <div class="signature reveal" data-reveal="fade-up" data-delay="320">
+          <span class="signature__label" data-content="finale.signatureLabel">Her şey senin için,</span>
+          <span class="signature__name" data-content="finale.signature">Ecrin</span>
+          <span class="signature__note" data-content="finale.signatureNote">Doğum günün kutlu olsun.</span>
+        </div>
+
+        <div class="finale__mark reveal" data-reveal="fade-up" data-delay="420" data-content="finale.closingMark" aria-hidden="true">
+          ♥
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Alt bilgi -->
+  <footer class="footer">
+    <p class="footer__note" data-content="site.footerNote">Senin için, sevgiyle.</p>
+    <p class="footer__year">© <span id="year">2026</span></p>
+  </footer>
+
+  <!-- Müzik düğmesi (sağ alt köşe) — otomatik başlatmaz -->
+  <button class="music-btn" id="musicBtn" type="button" aria-pressed="false" hidden>
+    <span class="music-btn__disc" aria-hidden="true">
+      <span class="music-btn__ring"></span>
+      <span class="music-btn__note">♪</span>
+    </span>
+    <span class="music-btn__label" data-content="music.playLabel">Müziği Aç</span>
+  </button>
+
+  <!-- Müzik dosyası (varsa) -->
+  <audio id="bgMusic" preload="none" loop></audio>
+
+  <!-- İçerik + scriptler -->
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+<script>
+window.__ERRORS__ = [];
+window.addEventListener('error', function(e){ if(e.target && e.target.tagName){ window.__ERRORS__.push('RESOURCE ERROR: ' + e.target.tagName + ' ' + (e.target.src||e.target.href)); } else { window.__ERRORS__.push('JS ERROR: ' + e.message); } }, true);
+window.addEventListener('load', function(){
+  var out = [];
+  function rep(){
+    var d = document.createElement('pre'); d.id='__R2__';
+    var mems=document.querySelectorAll('article.memory');
+    var lines=[];
+    lines.push('jsErrors=' + window.__ERRORS__.filter(function(x){return x.indexOf('JS ERROR')===0;}).length);
+    lines.push('resourceErrors=' + window.__ERRORS__.filter(function(x){return x.indexOf('RESOURCE')===0;}).length);
+    lines.push('memories=' + mems.length + ' reverse=' + document.querySelectorAll('.memory--reverse').length);
+    lines.push('captions=' + document.querySelectorAll('.memory__caption').length + ' indexes=' + document.querySelectorAll('.memory__index').length + ' frames=' + document.querySelectorAll('.memory__frame').length);
+    var ph=document.querySelectorAll('.memory__placeholder.is-active').length;
+    lines.push('placeholdersActive=' + ph);
+    lines.push('typingLen=' + document.getElementById('typing').textContent.length);
+    lines.push('typingDone=' + document.getElementById('typing').classList.contains('is-done'));
+    lines.push('topbarStuck(before)=' + document.getElementById('topbar').classList.contains('is-stuck'));
+    lines.push('finaleMsg="' + document.getElementById('finaleMessage').textContent.trim().slice(0,40) + '"');
+    lines.push('heroName="' + document.querySelector('[data-content="hero.name"]').textContent + '"');
+    lines.push('memoryHeading="' + document.querySelector('[data-content="memories.heading"]').textContent + '"');
+    lines.push('footerNote="' + document.querySelector('[data-content="site.footerNote"]').textContent + '"');
+    lines.push('signature="' + document.querySelector('[data-content="finale.signature"]').textContent + '"');
+    d.textContent = lines.join('\n');
+    document.body.appendChild(d);
+  }
+  setTimeout(function(){
+    window.scrollTo(0, 600);
+    setTimeout(function(){
+      var d=document.createElement('pre'); d.id='__R3__';
+      d.textContent = 'topbarStuck(after scroll 600)=' + document.getElementById('topbar').classList.contains('is-stuck') + '\nscrollY=' + Math.round(window.scrollY) + '\nvisibleAfterScroll=' + document.querySelectorAll('.is-visible').length;
+      document.body.appendChild(d);
+    }, 800);
+    rep();
+  }, 3500);
+});
+</script></body>
+</html>

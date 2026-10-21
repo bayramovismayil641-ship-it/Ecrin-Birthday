@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-label="Anı 3 için yer tutucu görsel">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7efe8"/>
+      <stop offset="50%" stop-color="#f3dfe0"/>
+      <stop offset="100%" stop-color="#e9c9cc"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg3)"/>
+  <circle cx="400" cy="430" r="145" fill="#ffffff" opacity="0.34"/>
+  <g fill="none" stroke="#9c4453" stroke-width="2" opacity="0.4">
+    <rect x="270" y="340" width="260" height="200" rx="6"/>
+    <circle cx="340" cy="405" r="17"/>
+    <path d="M280 515l78-72a14 14 0 0 1 20 0l142 128" stroke-linecap="round"/>
+  </g>
+  <text x="400" y="610" font-family="Georgia, serif" font-size="30" font-style="italic" fill="#7d2f3c" opacity="0.72" text-anchor="middle">Anı 3</text>
+  <text x="400" y="650" font-family="Helvetica, Arial, sans-serif" font-size="15" letter-spacing="4" fill="#6f565c" opacity="0.55" text-anchor="middle">FOTOĞRAF BURAYA</text>
+  <rect x="40" y="40" width="720" height="920" fill="none" stroke="#c9a96a" stroke-width="1.5" opacity="0.45"/>
+</svg>
