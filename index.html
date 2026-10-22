@@ -193,7 +193,18 @@
   </button>
 
   <!-- Müzik dosyası (varsa) -->
-  <audio id="bgMusic" preload="none" loop></audio>
+ <div id="youtubeMusicPlayer" style="width:280px; margin:12px auto; text-align:center;">
+  <iframe
+    id="youtubeMusic"
+    width="280"
+    height="158"
+    src="https://www.youtube.com/embed/afuvneT25_I"
+    title="Gökhan Türkmen - Seninle Ben"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+    style="border:0; max-width:100%;"
+  ></iframe>
+</div>
 
   <!-- İçerik + scriptler -->
   <script src="content.js"></script>
