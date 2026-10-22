@@ -39,7 +39,7 @@ window.ECRIN_CONTENT = {
     subtitle: "Bugün senin günün.",
     // YAZILAN (typewriter) animasyonlu mesaj.
     // KENDİ MESAJINI BURAYA YAZ.
-    typingText: "[DOĞUM GÜNÜ MESAJI BURAYA EKLENECEK]",
+    typingText: "[SENDEN NEFRET EDIYORUM]",
     // Yazı hızı (ms / karakter). Daha yavaş = daha şiirsel.
     typingSpeed: 45,
     // Aşağı kaydırma ipucu
@@ -71,7 +71,7 @@ window.ECRIN_CONTENT = {
        image: "images/ecrin-1.jpg",
         date: "",
         title: "",
-        caption: "[Birinci anının açıklaması buraya yazılacak.]",
+        caption: "[SENINLE]",
         position: "center"
       },
 
@@ -79,7 +79,7 @@ window.ECRIN_CONTENT = {
        image: "images/ecrin-2.jpg",
         date: "",
         title: "",
-        caption: "[İkinci anının açıklaması buraya yazılacak.]",
+        caption: "[BIR OMUR BIRLIKTE.]",
         position: "center"
       },
 
@@ -87,7 +87,7 @@ window.ECRIN_CONTENT = {
        image: "images/ecrin-3.jpg",
         date: "",
         title: "",
-        caption: "[Üçüncü anının açıklaması buraya yazılacak.]",
+        caption: "[SAGLIKLI,]",
         position: "center"
       },
 
@@ -95,7 +95,7 @@ window.ECRIN_CONTENT = {
        image: "images/ecrin-4.jpg",
         date: "",
         title: "",
-        caption: "[Dördüncü anının açıklaması buraya yazılacak.]",
+        caption: "[HUZURLU,]",
         position: "center"
       },
 
@@ -103,7 +103,7 @@ window.ECRIN_CONTENT = {
        image: "images/ecrin-5.jpg",
         date: "",
         title: "",
-        caption: "[Beşinci anının açıklaması buraya yazılacak.]",
+        caption: "[MUTLU]",
         position: "center"
       },
 
@@ -111,7 +111,7 @@ window.ECRIN_CONTENT = {
         image: "images/ecrin-6.jpg",
         date: "",
         title: "",
-        caption: "[Altıncı anının açıklaması buraya yazılacak.]",
+        caption: "[OLALIM SEVGILIM.]",
         position: "center"
       }
 
@@ -126,11 +126,11 @@ window.ECRIN_CONTENT = {
     // Bölüm başlığı
     heading: "Senin İçin",
     // Ana mesaj — KENDİ MESAJINI BURAYA YAZ
-    message: "[SON MESAJ BURAYA EKLENECEK]",
+    message: "[IYI KI VARSIN BITANEM]",
     // İmza satırının solundaki metin
     signatureLabel: "Her şey senin için,",
     // İmza — kendi adını veya bir söz yaz
-    signature: "Ecrin",
+    signature: "HAYATIM",
     // İmzanın altındaki küçük satır
     signatureNote: "Doğum günün kutlu olsun.",
     // Kapanışta gösterilecek küçük kalp animasyonu
