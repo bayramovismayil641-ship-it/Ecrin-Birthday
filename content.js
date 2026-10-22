@@ -68,7 +68,7 @@ window.ECRIN_CONTENT = {
     items: [
 
       {
-        image: "images/memory-1.svg",
+       image: "images/ecrin-1.jpg",
         date: "",
         title: "",
         caption: "[Birinci anının açıklaması buraya yazılacak.]",
@@ -76,7 +76,7 @@ window.ECRIN_CONTENT = {
       },
 
       {
-        image: "images/memory-2.svg",
+       image: "images/ecrin-2.jpg",
         date: "",
         title: "",
         caption: "[İkinci anının açıklaması buraya yazılacak.]",
@@ -84,7 +84,7 @@ window.ECRIN_CONTENT = {
       },
 
       {
-        image: "images/memory-3.svg",
+       image: "images/ecrin-3.jpg",
         date: "",
         title: "",
         caption: "[Üçüncü anının açıklaması buraya yazılacak.]",
@@ -92,7 +92,7 @@ window.ECRIN_CONTENT = {
       },
 
       {
-        image: "images/memory-4.svg",
+       image: "images/ecrin-4.jpg",
         date: "",
         title: "",
         caption: "[Dördüncü anının açıklaması buraya yazılacak.]",
@@ -100,7 +100,7 @@ window.ECRIN_CONTENT = {
       },
 
       {
-        image: "images/memory-5.svg",
+       image: "images/ecrin-5.jpg",
         date: "",
         title: "",
         caption: "[Beşinci anının açıklaması buraya yazılacak.]",
@@ -108,7 +108,7 @@ window.ECRIN_CONTENT = {
       },
 
       {
-        image: "images/memory-6.svg",
+        image: "images/ecrin-6.jpg",
         date: "",
         title: "",
         caption: "[Altıncı anının açıklaması buraya yazılacak.]",
